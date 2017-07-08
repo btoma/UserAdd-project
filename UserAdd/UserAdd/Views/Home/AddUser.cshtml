@@ -1,0 +1,24 @@
+﻿@model UserAdd.Models.User
+
+@{
+    ViewBag.Title = "AddUser";
+}
+ 
+<h1>Add User Information</h1>
+
+<div class="jumbotron">
+
+    @using (var form = Html.BeginForm("AddUser", "Home"))
+    {
+        <p>FirstN Name: @Html.TextBoxFor(x => x.FirstName)</p>
+        <br />
+        <p>Last Name: @Html.TextBoxFor(x => x.LastName)</p>
+        <br />
+        <p>Phone Number: @Html.TextBoxFor(x => x.PhoneNumber)</p>
+        <br />
+        <p>Email: @Html.TextBoxFor(x => x.Email)</p>
+        <br />
+        <p>Address: @Html.TextBoxFor(x => x.Address)</p>
+        <input type="submit" value="Add User" name="submitUser" />
+    }
+</div>
