@@ -18,6 +18,7 @@
             <th>Phone Number</th>
             <th>Email</th>
             <th>Address</th>
+            <th></th>
         </tr>
         @foreach (var user in Model)
         {
@@ -26,7 +27,9 @@
                 <td>@user.LastName</td>
                 <td>@user.PhoneNumber</td>
                 <td>@user.Email</td>
-                <td>@user.Address</td>
+                <td>@user.Addresses</td>
+                <td>@Html.ActionLink("Edit User", "EditContact", new { id = user.ID })</td>
+                <td>@Html.ActionLink("Delete User", "DeleteContact", new { id = user.ID })</td>
             </tr>
         }
     </table>

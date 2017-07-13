@@ -1,0 +1,26 @@
+﻿@model UserAdd.Models.User
+
+@{
+    ViewBag.Title = "Edit User";
+}
+ 
+<h1>Edite User Information</h1>
+
+<div class="jumbotron">
+
+    @using (var form = Html.BeginForm("ChangeUser", "Home"))
+    { 
+        @Html.HiddenFor(x => x.ID);
+
+        <p>FirstN Name: @Html.TextBoxFor(x => x.FirstName)</p>
+        <br />
+        <p>Last Name: @Html.TextBoxFor(x => x.LastName)</p>
+        <br />
+        <p>Phone Number: @Html.TextBoxFor(x => x.PhoneNumber)</p>
+        <br />
+        <p>Email: @Html.TextBoxFor(x => x.Email)</p>
+        <br />
+        <p>Address: @Html.TextBoxFor(x => x.Addresses)</p>
+        <input type="submit" value="Edit User" name="submitUser" />
+    }
+</div>

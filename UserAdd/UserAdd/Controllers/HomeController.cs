@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using UserAdd.Models;
+using Dapper;
+using UserAdd.Repositories;
 
 namespace UserAdd.Controllers
 {
@@ -44,21 +48,51 @@ namespace UserAdd.Controllers
         {
             return View("UserList", _userRepository.Users);
         }
-    }
-    public class UserRepository
-    {
-        private List<User> _users = new List<User>();
 
-        public void AddUser(User user)
+        public ActionResult EditContact(int id)
         {
-            _users.Add(user);
+            return View("EditUser", _userRepository.GetContact(id));
         }
-        public List<User> Users
+
+        public ActionResult DeleteContact(int id)
         {
-            get
+            _userRepository.Delete(id);
+            return View("UserList", _userRepository.Users);
+        }
+
+        public ActionResult ChangeUser(User user)
+        {
+            _userRepository.EditContact(user);
+            return View("UserList", _userRepository.Users);
+        }
+
+        [HttpGet]
+        public ActionResult Search()
+        {
+            return PartialView("_SearchFormPartial");
+        }
+
+        [HttpPost]
+        public ActionResult Search(string query)
+        {
+            if (query != null)
             {
-                return _users;
+                try
+                {
+                    var searchlist = _userRepository.Search(query);
+
+               
+                  
+
+                    return PartialView("_SearchResultsPartial", searchlist);
+                }
+                catch (Exception e)
+                {
+                    // handle exception
+                }
             }
+            return PartialView("Error");
         }
     }
+    
 }

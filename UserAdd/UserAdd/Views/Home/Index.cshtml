@@ -1,6 +1,13 @@
-﻿@model UserAdd.Models.UserList
+﻿
 @{
-    ViewBag.Title = "Add User";
+    ViewBag.Title = "Search for User";
 }
 
 <h2>Add New User</h2>
+
+
+<div id="search-form">
+    @Html.Action("Search", "Home")
+</div>
+<div id="search-results">
+</div>

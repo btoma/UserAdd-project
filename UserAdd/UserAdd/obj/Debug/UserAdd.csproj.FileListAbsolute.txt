@@ -64,3 +64,10 @@ C:\Users\Biven\Documents\GitHub\UserAdd-project\UserAdd\UserAdd\bin\Microsoft.AI
 C:\Users\Biven\Documents\GitHub\UserAdd-project\UserAdd\UserAdd\bin\Microsoft.AI.Web.xml
 C:\Users\Biven\Documents\GitHub\UserAdd-project\UserAdd\UserAdd\obj\Debug\UserAdd.dll
 C:\Users\Biven\Documents\GitHub\UserAdd-project\UserAdd\UserAdd\obj\Debug\UserAdd.pdb
+C:\Users\Biven\Documents\GitHub\UserAdd-project\UserAdd\UserAdd\bin\Dapper.dll
+C:\Users\Biven\Documents\GitHub\UserAdd-project\UserAdd\UserAdd\bin\Dapper.xml
+C:\Users\Biven\Documents\GitHub\UserAdd-project\UserAdd\UserAdd\obj\Debug\UserAdd.csprojResolveAssemblyReference.cache
+C:\Users\Biven\Documents\GitHub\UserAdd-project\UserAdd\UserAdd\bin\EntityFramework.dll
+C:\Users\Biven\Documents\GitHub\UserAdd-project\UserAdd\UserAdd\bin\EntityFramework.SqlServer.dll
+C:\Users\Biven\Documents\GitHub\UserAdd-project\UserAdd\UserAdd\bin\EntityFramework.xml
+C:\Users\Biven\Documents\GitHub\UserAdd-project\UserAdd\UserAdd\bin\EntityFramework.SqlServer.xml
