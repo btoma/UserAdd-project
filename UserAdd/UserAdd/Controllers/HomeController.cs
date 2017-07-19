@@ -16,22 +16,10 @@ namespace UserAdd.Controllers
         static UserRepository _userRepository = new UserRepository();
         public ActionResult Index()
         {
-            return View();
+            return View(_userRepository.Users);
         }
 
-        public ActionResult About()
-        {
-            ViewBag.Message = "Your application description page.";
-
-            return View();
-        }
-
-        public ActionResult Contact()
-        {
-            ViewBag.Message = "Your contact page.";
-
-            return View();
-        }
+      
         public ActionResult CreateUser()
         {
            
@@ -57,7 +45,7 @@ namespace UserAdd.Controllers
         public ActionResult DeleteContact(int id)
         {
             _userRepository.Delete(id);
-            return View("UserList", _userRepository.Users);
+            return View("Index", _userRepository.Users);
         }
 
         public ActionResult ChangeUser(User user)

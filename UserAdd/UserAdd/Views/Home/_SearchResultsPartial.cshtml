@@ -7,10 +7,16 @@
 }
 else
 {
-    foreach (var user in Model)
+   foreach (var user in Model)
     {
-        <h3>FirstName</h3>
-        @user.FirstName
-        
+        <div class="result-section">
+            <h3>First Name :</h3>
+            <p>@user.FirstName</p>
+            <h3>Last Name :</h3>
+           <p>@user.LastName</p> 
+        </div>
+
     }
+  
+
 }

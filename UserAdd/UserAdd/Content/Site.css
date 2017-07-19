@@ -1,6 +1,7 @@
 ﻿body {
     padding-top: 50px;
     padding-bottom: 20px;
+    background-color: #294072;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +22,151 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+
+.header-contener {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border: 1px solid #1c2b4a;
+    border-radius: 5px;
+    background-color: #1c2b4a;
+}
+
+.adduser-button {
+    align-items: flex-start;
+    text-align: center;
+    color: buttontext;
+    background-color: buttonface;
+    box-sizing: border-box;
+    padding: 2px 6px 3px;
+    border-width: 2px;
+    border-color: buttonface;
+    line-height: 30px;
+    text-decoration: none!important;
+    text-transform: uppercase;
+}
+#search-form {
+    width:60%;
+}
+
+#search-form div {
+    text-align: end;
+    padding-right: 20px;
+}
+    
+#query {
+    width: 75%;
+    min-height: 35px;
+}
+
+#search-form input:last-child {
+    margin-left: 15px;
+    padding: 7px 15px;
+    text-transform: uppercase;
+    border-radius: 5px;
+    color: white;
+    font-size: 15px;
+    border-style: none;
+    background-color: #009966;
+    border-color: #009966;
+    line-height: 25px;
+}
+
+#search-form input:first-child {
+   
+}
+
+.panel-heading {
+    color: white;
+    background-color: #12192c;
+    border-color: #12192c;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+.user-from form {
+    display: flex;
+    flex-direction: column;
+    flex-flow: wrap;
+    justify-content: initial;
+}
+#user-submit {
+    margin: 20px !important;
+}
+    
+    
+.user-from p {
+    display: flex;
+    flex-direction: column;
+    margin-right: 50px;
+
+}
+
+.btn-default {
+    background-color: #009966;
+    border-color: #009966;
+    color: white;
+    padding: 5px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-size: 15px;
+}
+
+.jumbotron {
+    background-color: #214f71;
+}
+.jumbotron p {
+   color: white;
+}
+
+#user-submit {
+    background-color: #00cc66;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    border-color: #00cc66;
+    margin-top: 29px !important;
+}
+.panel-default {
+    border-color: #1c2b4a;
+    background-color: #1c2b4a;
+}
+h2, td, a, th, h1, h3 {
+    color:white;
+}
+footer p {
+    color: white;
+}
+.header-page {
+    text-align: center;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#search-results .result-section {
+    display: flex;
+}
+
+#search-results .result-section h3 {
+    display: flex;
+    flex-direction: column;
+}
+
+#search-results .result-section p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+    color: white;
+    padding: 5px 30px;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+th {
+    border:none!important;
 }

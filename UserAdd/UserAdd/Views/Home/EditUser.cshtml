@@ -6,7 +6,7 @@
  
 <h1>Edite User Information</h1>
 
-<div class="jumbotron">
+<div class="jumbotron user-from">
 
     @using (var form = Html.BeginForm("ChangeUser", "Home"))
     { 
@@ -21,6 +21,6 @@
         <p>Email: @Html.TextBoxFor(x => x.Email)</p>
         <br />
         <p>Address: @Html.TextBoxFor(x => x.Addresses)</p>
-        <input type="submit" value="Edit User" name="submitUser" />
+        <input  id="user-submit" type="submit" value="Edit User" name="submitUser" />
     }
 </div>

@@ -20,8 +20,8 @@ namespace UserAdd.Models
         public string Email { get; set; }
         [Column("ADDRESSES")]
         public string Addresses { get; set; }
-
-        // public string Image { get; set; }
+        [Column("PROFILIMAGE")]
+        public string Image { get; set; }
 
     }
 
