@@ -3,5 +3,26 @@
     ViewBag.Title = "SinglUser";
 }
 
-<h2>SinglUser</h2>
-<h2>@Model.FirstName @Model.LastName</h2>
+<h2>Singl User</h2>
+
+<table class="table">
+    <tr>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Phone Number</th>
+        <th>Email</th>
+        <th>Address</th>
+
+    </tr>
+   
+        <tr>
+            <td>@Model.FirstName</td>
+            <td>@Model.LastName</td>
+            <td>@Model.PhoneNumber</td>
+            <td>@Model.Email</td>
+            <td>@Model.Addresses</td>
+          
+        </tr>
+    
+</table>
+
