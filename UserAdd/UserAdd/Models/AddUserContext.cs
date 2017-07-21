@@ -14,6 +14,7 @@ namespace UserAdd.Models
         public AddUserContext()
         {
             // Disable the database initializer in favor of using Code First Migrations.
+            Database.SetInitializer<AddUserContext>(new DropCreateDatabaseAlways<AddUserContext>());
             Database.SetInitializer<AddUserContext>(null);
         }
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
