@@ -71,3 +71,5 @@ C:\Users\Biven\Documents\GitHub\UserAdd-project\UserAdd\UserAdd\bin\EntityFramew
 C:\Users\Biven\Documents\GitHub\UserAdd-project\UserAdd\UserAdd\bin\EntityFramework.SqlServer.dll
 C:\Users\Biven\Documents\GitHub\UserAdd-project\UserAdd\UserAdd\bin\EntityFramework.xml
 C:\Users\Biven\Documents\GitHub\UserAdd-project\UserAdd\UserAdd\bin\EntityFramework.SqlServer.xml
+C:\Users\Biven\Documents\GitHub\UserAdd-project\UserAdd\UserAdd\obj\Debug\UserAdd.Migrations.Initial.resources
+C:\Users\Biven\Documents\GitHub\UserAdd-project\UserAdd\UserAdd\obj\Debug\UserAdd.csproj.GenerateResource.Cache

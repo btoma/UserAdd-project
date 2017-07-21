@@ -15,7 +15,7 @@ namespace UserAdd.Models
         [Column("LASTNAME")]
         public string LastName { get; set; }
         [Column("PHONENUMBER")]
-        public int? PhoneNumber { get; set; }
+        public string PhoneNumber { get; set; }
         [Column("EMAIL")]
         public string Email { get; set; }
         [Column("ADDRESSES")]
